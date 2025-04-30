@@ -14,14 +14,6 @@ def main():
 		'esr' : 0.55 # in ohms
 		}
 	#initialize capacitor-2 with its nameplate details	
-	# mysupercap2 = {
-		# 'leakcurrent' : 500e-4, #in A
-		# 'capacitance' : 80, # in F
-		# 'ratedcurrent' : 30, # in A
-		# 'initialvoltage' : 0, # in V
-		# 'ratedvoltage' : 70, # in V
-		# 'esr' : 0.55*3 # in ohms
-		# }
 	mysupercap2 = {
 		'leakcurrent' : 0.026, #in A
 		'capacitance' : 300, # in F
