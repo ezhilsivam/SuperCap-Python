@@ -22,7 +22,7 @@ def main():
 		'ratedvoltage' : 70, # in V
 		'esr' : 0.55*3 # in ohms
 		}
-	#initialize capacitor-2 with its nameplate details	
+	#initialize capacitor-3 with its nameplate details	
 	mysupercap3 = {
 		'leakcurrent' : 500e-4*3, #in A
 		'capacitance' : 300, # in F
@@ -32,7 +32,7 @@ def main():
 		'esr' : 0.55*3 # in ohms
 		}
 
-	#The following lines allow to generate a test charge and discharge process for the supercapacitor2
+	#The following lines allow to generate a test charge and discharge process for the supercapacitor1
 	testsc = SuperCapacitorModel(mysupercap1)
 	 
 	testsc.set_timedelta(dtt.timedelta(seconds=1))
@@ -55,7 +55,7 @@ def main():
 	plt.ylabel('Voltage [V]')
 	plt.show(block=True)
 	
-	#The following lines allow to generate a test charge and discharge process for the supercapacitor1
+	#The following lines allow to generate a test charge and discharge process for the supercapacitor2
 	testsc2 = SuperCapacitorModel(mysupercap2)
 	 
 	testsc2.set_timedelta(dtt.timedelta(seconds=1))
@@ -77,7 +77,7 @@ def main():
 	plt.ylabel('Voltage [V]')
 	plt.show(block=True)  
 	
-	#The following lines allow to generate a test charge and discharge process for the supercapacitor1
+	#The following lines allow to generate a test charge and discharge process for the supercapacitor3
 	testsc3 = SuperCapacitorModel(mysupercap3)
 	 
 	testsc3.set_timedelta(dtt.timedelta(seconds=1))
